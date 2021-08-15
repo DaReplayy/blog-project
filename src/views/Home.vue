@@ -5,16 +5,19 @@
     <div v-if="posts.length">
       <PostList :posts="posts"/>
     </div>
-    <div v-else>Loading...</div>
+    <div v-else>
+      <Spinner />
+    </div>
   </div>
 </template>
 
 <script>
 import PostList from '../components/PostList.vue'
 import getPosts from '../composables/getPosts'
+import Spinner from '../components/Spinner.vue'
 
 export default {
-  components: { PostList },
+  components: { PostList, Spinner },
   name: 'Home',
   setup() {
     const { posts, error, load } = getPosts()
@@ -26,3 +29,12 @@ export default {
   
 }
 </script>
+
+<style>
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+</style>
