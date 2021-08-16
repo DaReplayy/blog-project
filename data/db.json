@@ -28,6 +28,15 @@
         "html"
       ],
       "id": 3
+    },
+    {
+      "title": "Test",
+      "body": "This is a test",
+      "tags": [
+        "test",
+        "yes"
+      ],
+      "id": 4
     }
   ]
 }

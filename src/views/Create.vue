@@ -21,12 +21,19 @@
 
 <script>
 import { ref } from 'vue'
+import {useRouter} from 'vue-router'
+
 export default {
   setup() {
     const title = ref('')
     const body = ref('')
     const tags = ref([])
     const tag = ref('')
+
+    const router = useRouter()
+
+
+
     const handleKeydown = () => {
       if (!tags.value.includes(tag.value)) {
         tag.value = tag.value.replace(/\s/,'') // remove all whitespace
@@ -47,6 +54,8 @@ export default {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(post)
       })
+
+      router.push({ name: 'Home' })
     }
 
     return { body, title, tags, tag, handleKeydown, handleSubmit }
