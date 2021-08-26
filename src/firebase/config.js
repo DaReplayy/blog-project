@@ -2,13 +2,12 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBKB4L3qyD-QHCovEvntQS3HRuOJBVSkno",
-  authDomain: "udemy-vue-projects.firebaseapp.com",
-  databaseURL: "https://udemy-vue-projects.firebaseio.com",
-  projectId: "udemy-vue-projects",
-  storageBucket: "udemy-vue-projects.appspot.com",
-  messagingSenderId: "25092947019",
-  appId: "1:25092947019:web:fdd61cabc8d29add63e1ce"
+  apiKey: "AIzaSyDAaslaTgm-uuijUK3ykkJSF4h-NBG0Ddk",
+  authDomain: "vue-firebase-tutorial-69f95.firebaseapp.com",
+  projectId: "vue-firebase-tutorial-69f95",
+  storageBucket: "vue-firebase-tutorial-69f95.appspot.com",
+  messagingSenderId: "1026571677273",
+  appId: "1:1026571677273:web:dd7180bd6dcf2eaf3dcb48"
 };
 
 // init firebase
